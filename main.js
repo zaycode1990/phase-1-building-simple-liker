@@ -1,11 +1,10 @@
 // Defining text characters for the empty and full hearts for you to use later.
-const errorMMessage = document.querySelector("#modal-message")
+const errorMessage = document.querySelector("#modal-message")
 const hidden = document.querySelector('#modal')
 hidden.classList.add('hidden')
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 const glyphList = document.querySelectorAll(".like-glyph")
-const activatedHeart = document.querySelectorAll(".activated-heart")
 // Your JavaScript code goes here!
 glyphList.forEach(glyph =>{glyph.addEventListener('click',() =>
 mimicServerCall()
@@ -24,15 +23,13 @@ mimicServerCall()
   hidden.classList.remove("hidden")
   errorMessage.textContent = error
   setTimeout(hideAgain, 3000)
-
-
 })
 )
 }) 
 
 function hideAgain() {
-  return hidden.classList.add("hidden")}
-
+  return hidden.classList.add("hidden")
+}
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
