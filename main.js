@@ -10,12 +10,12 @@ glyphList.forEach(glyph =>{glyph.addEventListener('click',() =>
 mimicServerCall()
 .then(()=>{
   if (glyph.textContent !== FULL_HEART) {
-    glyph.classList = "activated-heart"
+    glyph.classList.add("activated-heart")
     glyph.textContent = FULL_HEART
   }
   else if (glyph.textContent === FULL_HEART) { 
     glyph.textContent = EMPTY_HEART
-    glyph.classList.remove(".activated-heart") 
+    glyph.classList.remove("activated-heart")
   }
 
 })
