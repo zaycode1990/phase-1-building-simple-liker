@@ -17,7 +17,6 @@ mimicServerCall()
     glyph.textContent = EMPTY_HEART
     glyph.classList.remove("activated-heart")
   }
-
 })
 .catch((error) => {
   hidden.classList.remove("hidden")
@@ -30,7 +29,7 @@ mimicServerCall()
 function hideAgain() {
   return hidden.classList.add("hidden")
 }
-
+console.log(glyphList)
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
 //------------------------------------------------------------------------------
